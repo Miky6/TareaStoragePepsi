@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MM1_PAL_COM" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=35.184.6.120;Initial Catalog=MM1_PAL_COM;Persist Security Info=True;User ID=usrprod" SettingsObjectName="TareaStoragePepsi.Properties.Settings" SettingsPropertyName="MM1_PAL_COMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CLCHKIMG" Member="CLCHKIMG">
+    <Type Name="CLCHKIMG">
+      <Column Name="CMCIAID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLCHKID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLCHKPROID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLCHKACTID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLCHKIMGLIN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLCHKIMGBLOB" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CLCHKIMGSTORAGE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLCHKIMGSTS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLCHKIMGNAME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CLCHKTAR" Member="CLCHKTAR">
+    <Type Name="CLCHKTAR">
+      <Column Name="CMCIAID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLCHKID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLCHKPROID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLCHKACTID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLCHKTARLIN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLCHKTARTPID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CLCHKTARID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CLCHKTARTXC" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CLCHKTARTXL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLCHKTARURL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLCHKTARNAME" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

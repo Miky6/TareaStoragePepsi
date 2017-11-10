@@ -10,10 +10,10 @@ namespace TareaStoragePepsi
 {
     class Program
     {
+        public static Timer t = new Timer();
         static void Main(string[] args)
         {
-            Timer t = new Timer();
-            t.Interval = 6000;
+            t.Interval = 3000;
             t.Start();
             t.Elapsed += ChecarTiempo;
             // Wait for the user to hit <Enter>;
@@ -22,12 +22,14 @@ namespace TareaStoragePepsi
 
         private static void ChecarTiempo(object sender, ElapsedEventArgs e)
         {
-            Console.WriteLine(String.Format("{0:HH:mm}", DateTime.Now));
-            if ((string.Format("{0:HH:mm}", DateTime.Now) == "15:33"))
-            {
-                Storage storage = new Storage();
-                storage.insertaStorage();
-            }
+            //    if ((string.Format("{0:HH:mm}", DateTime.Now) == "13:35"))
+            //    {
+            t.Stop();
+            Metodos.Respuesta();
+            LiberarMemoria ob = new LiberarMemoria();
+            ob.Dispose();
+            t.Start();
+            //}
         }
     }
 }

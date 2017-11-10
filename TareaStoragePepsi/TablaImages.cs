@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace TareaStoragePepsi
 {
-    class CLCHKIMG
+    class TablaImages
     {
         public decimal CMCIAID { get; set; }
         public decimal CLCHKID { get; set; }
         public decimal CLCHKPROID { get; set; }
         public decimal CLCHKACTID { get; set; }
-        public decimal CLCHKIMGLIN { get; set; }
+        public int CLCHKIMGLIN { get; set; }
         public byte[] CLCHKIMGBLOB { get; set; }
     }
 }
